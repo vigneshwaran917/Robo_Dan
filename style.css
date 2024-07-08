@@ -1,0 +1,196 @@
+#face{
+    height: 180px;
+    width: 200px;
+    background-color: chartreuse;
+    margin: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 6%;
+}
+#lh,#rh{
+    height: 150px;
+    width: 30px;
+    background-color: chartreuse;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+#center{
+    height: 200px;
+    background-color: chartreuse;
+    width: 200px;
+    margin-top: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#body1{
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+#lleg,#rleg{
+    height: 150px;
+    width: 30px;
+    background-color: chartreuse;
+    border-radius: 50px;
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 300px; 
+    margin-top: -25px;
+}
+#le,#re{
+    height: 28px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;    
+}
+#eyes{
+    margin: auto;
+    display: flex;
+    padding: 100px;
+    justify-content:space-evenly;
+    padding-left: 3px;
+    padding-right: 0px;   
+}
+#main{
+    height: 580px;
+    width: 400px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+#main:hover #face{
+    animation: changeface 5s infinite;
+}
+@keyframes changeface{
+    0%{
+        transform: rotate(90deg);
+        
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+        
+    }
+    75%{
+        transform: translatey(-40px);
+        background: burlywood;
+    }
+    
+}
+#main:hover #center{
+    animation: changecenter 5s infinite;
+}
+@keyframes changecenter{
+    0%{
+        transform: rotate(90deg);
+        border-radius: 20%;
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+        border-radius: 25%;
+    }
+    75%{
+        transform: translateX(-40px);
+        background: burlywood;
+    }
+    100%{
+        transform: rotate(-90deg);
+        border-radius: 25%;   
+    }  
+}
+#main:hover #lh{
+    animation: changelf 5s infinite;
+}
+@keyframes changelf{
+    0%{
+        transform: rotate(90deg);
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+    }
+    75%{
+        transform: translateX(-40px);
+        background: burlywood;
+    }
+    100%{
+        transform: rotate(-180deg); 
+    }
+}
+#main:hover #rh{
+    animation: changerf 5s infinite;
+}
+@keyframes changerf{
+    0%{
+        transform: rotate(90deg);
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+    }
+    75%{
+        transform: translateX(-40px);
+        background: burlywood;
+    }
+    100%{
+        transform: rotate(-180deg);
+    } 
+}
+#main:hover #lleg{
+    animation: changelleg 5s infinite;
+}
+@keyframes changelleg{
+    0%{
+        transform: rotate(90deg);
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+    }
+    75%{
+        transform: translateX(-40px);
+        background: burlywood;
+    }
+    100%{
+        transform: rotate(-180deg);
+    } 
+}
+#main:hover #rleg{
+    animation: changerleg 5s infinite;
+}
+@keyframes changerleg{
+    0%{
+        transform: rotate(90deg);
+        background: orange;
+    }
+    50%{
+        transform: translatex(40px);
+        background: blueviolet;
+    }
+    75%{
+        transform: translateX(-40px);
+        background: burlywood;
+    }
+    100%{
+        transform: rotate(-180deg);
+    } 
+}
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: rgb(18, 52, 5);
+}
